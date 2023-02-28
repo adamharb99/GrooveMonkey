@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to right,#16191e 50%, #0278ff 50%);
+}
+
+.slider-cont {
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.slider {
+    position: relative;
+    width: 300px;
+    height: 8px;
+}
+
+.slider input[type= "range"] {
+    position: absolute;
+    left: -2px;
+    top: 0;
+    width: 304px;
+    height: 8px;
+    appearance: none;
+    background: transparent;
+    z-index:99;
+}
+
+.slider input::slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #cc0000;
+}
+
+ .music-player {
+    font-size: 16px;
+    width: 80vw;
+    max-width: 25em;
+    background-color: #ffffff;
+    padding: 3em 1.8em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius:1em;
+    box-shadow: 0.6em 1.2em 3em  rgba(245, 45, 0, 0.5);
+}
+
+img{
+    width: 100%;
+    margin-top: 1.10em;
+}
+#playlist{
+   float: right; /*The CSS float property specifies how an element should float.
+   The float property is used for positioning and formatting content e.g. let an image float left to the text in a container.
+   The element float to the right of its container*/
+   cursor: pointer;
+}
+
+.song-details{
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    color: #dc0d0d
+}
+
+.song-details #song-name{
+    font-size:1.4em;
+    font-weight:500;
+    letter-spacing: 0.2px;
+}
+
+.song-details #song-artist{
+    font-size: 0.9em;
+}
+
+.player-option{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 1.25em; /*Padding is used to create space around an element's content, inside of any defined borders.*/
+    margin: 1.25em 0 0.6em 0; /*Margins are used to create space around elements, outside of any defined borders.*/
+}
+
+.music-player button{
+    border: none; /*The CSS border properties allow you to specify the style, width, and color of an element's border.*/
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#play, #pause{
+    height:3.5em;
+    width:2em;
+    font-size:1.5em;
+    color: #e700e3;
+    background-color: #000000;
+    border-radius:30%;
+}
+
+#prev, #next{
+    color: #ff00bf;
+    font-size: 1.5em;
+}
+
+#shuffle, #repeat{
+    color: #ff00bf;
+    font-size: 1em;
+}
+
+.hide{
+    display: none;
+}
+
+#progress-bar{
+    position: relative;
+    width: 100%;
+    height: 0.6em;
+    background-color:#bebeb1;
+    margin: 1em 0;
+    border-radius: 0.19em;
+    cursor: pointer;
+}
+
+#current-progress{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    height: 100%;
+    width: 20%;
+    background-color: #080808;
+    border-radius: 0.18em;
+}
+
+.time-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Titillium Web', sans-serif;
+    color: #0037ff;
+}
+
+#playlist-container {
+    background-color: #33f76b;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 0.6em;
+    padding: 2em, 1em;
+    font-family: 'Shantell Sans', cursive;
+}
+
+#close-button {
+    background-color: #9413c7;
+    color: #ffffff;
+    border: none;
+    height: 2em;
+    width: 2em;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    margin: 1em 1;
+    cursor: pointer;
+}
+
+.playlist-songs-details{
+    margin-left: 1em;
+}
+
+.playlist-songs-details > span {
+    display: block;
+}
+
+#playlist-songs-artist-album {
+    color: #ef0505;
+    font-size: 0.8em;
+}
+
+button.active i {
+    color: #baa6a6;
+}
+
+@media screen and (max-width: 450px) {
+    .music-player
+    {
+        font-size: 14px;
+    }
+}
+
+.playlist-image-container {
+    width: 4em;
+}

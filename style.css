@@ -10,38 +10,6 @@ body {
     background: linear-gradient(to right,#16191e 50%, #0278ff 50%);
 }
 
-.slider-cont {
-    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1);
-    padding: 25px;
-    border-radius: 50px;
-    display: flex;
-    align-items: center;
-}
-
-.slider {
-    position: relative;
-    width: 300px;
-    height: 8px;
-}
-
-.slider input[type= "range"] {
-    position: absolute;
-    left: -2px;
-    top: 0;
-    width: 304px;
-    height: 8px;
-    appearance: none;
-    background: transparent;
-    z-index:99;
-}
-
-.slider input::slider-thumb {
-    appearance: none;
-    width: 20px;
-    height: 20px;
-    background-color: #cc0000;
-}
-
  .music-player {
     font-size: 16px;
     width: 80vw;

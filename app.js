@@ -16,7 +16,6 @@ const playlistContainer = document.getElementById("playlist-container");
 const closeButton = document.getElementById("close-button");
 const playlistSongs = document.getElementById("playlist-songs");
 const currentProgress = document.getElementById("current-progress");
-
 //index for songs
 let index;
 
@@ -26,45 +25,51 @@ let loop = true;
 const songsList = [
     {
         name: "Shape of My Heart",
-        link: "file:///C:/Users/adamh/Downloads/Shape%20of%20My%20Heart.mp3",
-        artist:"Backstreet Boys",
-        image: "file:///C:/Users/adamh/Downloads/BSB%20Black%20and%20Blue.jpg",
+        link: "music/Shape of My Heart.mp3",
+        artist: "Backstreet Boys",
+        image: "album-cover/Black and Blue.jpg",
     },
     {
         name: "Booty Wurk (One Cheeck At a Time)(feat. Joey Galaxy)",
-        link: "file:///C:/Users/adamh/Downloads/Booty%20Wurk%20(One%20Cheek%20At%20a%20Time).mp3",
+        link: "music/Booty Wurk (One Cheek At a Time).mp3",
         artist: "T-Pain",
-        image: "file:///C:/Users/adamh/Downloads/T-Pain%20Presents%20Happy%20Hour%20The%20Greatest%20Hits.jpg",
+        image: "album-cover/T-Pain Presents Happy Hour The Greatest Hits.jpg",
     },
     {
         name: "Southern Hospitality",
-        link: "file:///C:/Users/adamh/Downloads/Southern%20Hospitality%20(Feat.%20Pharrell).mp3",
+        link: "music/Southern Hospitality (Feat. Pharrell).mp3",
         artist: "Ludacris",
-        image: "file:///C:/Users/adamh/Downloads/Back%20For%20The%20First%20Time.jpg",
+        image: "album-cover/Back For The First Time.jpg",
     },
     {
         name: "Lean Back (feat. Fat Joe and Remy Ma)",
-        link: "file:///C:/Users/adamh/Downloads/Lean%20Back.mp3",
+        link: "music/Lean Back.mp3",
         artist: "Terror Squad",
-        image: "file:///C:/Users/adamh/Downloads/True%20Story.jpg",
+        image: "album-cover/True Story.jpg",
     },
     {
         name: "Rollout (My Business)",
-        link: "file:///C:/Users/adamh/Downloads/Rollout%20(My%20Business).mp3",
+        link: "music/Rollout (My Business).mp3",
         artist:"Ludacris",
-        image: "file:///C:/Users/adamh/Downloads/Word%20of%20Mouf.jpg",
+        image: "album-cover/Word of Mouf.jpg",
     },
     {
         name: "Pretty Boy Swag",
-        link: "file:///C:/Users/adamh/Downloads/Pretty%20Boy%20Swag.mp3",
+        link: "music/Pretty Boy Swag.mp3",
         artist: "Soulja Boy Tell Em",
-        image: "file:///C:/Users/adamh/Downloads/The%20DeAndre%20Way.jpg",
+        image: "album-cover/The DeAndre Way.jpg",
     },
     {
         name: "Hard",
-        link: "file:///C:/Users/adamh/Downloads/Hard.mp3",
+        link: "music/Hard.mp3",
         artist: "Gucci Mane",
-        image: "file:///C:/Users/adamh/Downloads/Atlanta%20Gave%20Me%20Vision.jpg",
+        image: "album-cover/Atlanta Gave Me Vision.jpg",
+    },
+    {
+        name: "Hit Me Baby One More Time",
+        link: "music/Baby One More Time.mp3",
+        artist: "Britney Spears",
+        image: "album-cover/Baby One More Time.png",
     },
 ];
 
@@ -284,6 +289,7 @@ playlistButton.addEventListener("click", () => {
 closeButton.addEventListener("click", () => {
     playlistContainer.classList.add("hide");
 });
+
 
 window.onload = () => {
     //initially first song
